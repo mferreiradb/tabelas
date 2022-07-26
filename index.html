@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabelas</title>
+</head>
+<body>
+
+    <div class="grupo topo">
+        <h1>Tabelas</h1>
+    </div>
+    
+    <div class="grupo">
+        <h2>Introdução</h2>
+        <ul>
+            <li>As tabelas são elementos de tag <b>&lt;table&gt;&lt;/table&gt;</b></li>
+            <li>A tag <b>&lt;tr&gt;</b> cria uma linha na tabela</li>
+            <li>A tag <b>&lt;td&gt;</b> cria uma coluna na tabela</li>
+            <li>A tag <b>&lt;th&gt;</b> cria uma coluna do cabeçalho na tabela</li>
+        </ul>
+    </div>
+
+    <div class="tabela">
+
+        <div>
+            <code>
+                <b>&lt;table&gt;</b><br><br>
+
+                &nbsp; <b>&lt;tr&gt;</b><br><br>
+                    &nbsp;&nbsp; <b>&lt;th&gt;</b>Ano<b>&lt;/th&gt;</b><br>
+                    &nbsp;&nbsp; <b>&lt;th&gt;</b>Total de Vendas (R$)<b>&lt;/th&gt;</b><br><br>
+                &nbsp; <b>&lt;/tr&gt;</b><br><br>
+
+                &nbsp; <b>&lt;tr&gt;</b><br><br>
+                    &nbsp;&nbsp; <b>&lt;td&gt;</b>2020<b>&lt;/td&gt;</b><br>
+                    &nbsp;&nbsp; <b>&lt;td&gt;</b>210.000,00<b>&lt;/td&gt;</b><br><br>
+                &nbsp; <b>&lt;/tr&gt;</b><br><br>
+
+                &nbsp; <b>&lt;tr&gt;</b><br><br>
+                    &nbsp;&nbsp; <b>&lt;td&gt;</b>2021<b>&lt;/td&gt;</b><br>
+                    &nbsp;&nbsp; <b>&lt;td&gt;</b>230.000,00<b>&lt;/td&gt;</b><br><br>
+                &nbsp; <b>&lt;/tr&gt;</b><br><br>
+            
+                <b>&lt;/table&gt;</b><br>
+            </code>
+        </div>
+
+        <div>
+
+            <table>
+                
+                <tr>
+                    <th>Ano</th>
+                    <th>Total de vendas (R$)</th>
+                </tr>
+                
+                <tr>
+                    <td>2020</td>
+                    <td>210.000,00</td>
+                </tr>
+                
+                <tr>
+                    <td>2021</td>
+                    <td>230.000,00</td>
+                </tr>
+            
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="tabela estilizada">
+
+        <h3>Tabela de Vendas Por Ano</h3>
+
+        <div>
+            <table>
+
+                <tr>
+                    <td>id</td>
+                    <th>Filial</th>
+                    <th>2019</th>
+                    <th>2020</th>
+                    <th>2021</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>São Paulo (SP)</td>
+                    <td>400.000,00</td>
+                    <td>450.000,00</td>
+                    <td>500.000,00</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Rio de Janeiro (RJ)</td>
+                    <td>370.000,00</td>
+                    <td>420.000,00</td>
+                    <td>480.000,00</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Salvador (BA)</td>
+                    <td>350.000,00</td>
+                    <td>400.000,00</td>
+                    <td>450.000,00</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Teresina (PI)</td>
+                    <td>250.000,00</td>
+                    <td>300.000,00</td>
+                    <td>350.000,00</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Parnaíba (PI)</td>
+                    <td>100.000,00</td>
+                    <td>150.000,00</td>
+                    <td>200.000,00</td>
+                </tr>
+
+            </table>
+        </div>
+        
+    </div>
+
+    <div class="grupo">
+        <h2>THEAD, TBODY, TFOOT</h2>
+        <ul>
+            <li>Definição as áreas da tabela</li>
+            <li>A tag <b>&lt;thead&gt;</b> Delimita o conteúdo do cabeçalho</li>
+            <li>A tag <b>&lt;tbody&gt;</b> Delimita o corpo da tabela</li>
+            <li>A tag <b>&lt;tfoot&gt;</b> Delimita o conteúdo de rodapé da tabela</li>
+        </ul>
+    </div>
+
+    <div class="tabela">
+
+        <div>
+            <code>
+                <b>&lt;table&gt;</b><br><br>
+
+                <b>&lt;thead&gt;</b><br>
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Ano<b>&lt;/th&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Total de Vendas (R$)<b>&lt;/th&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br>
+                <b>&lt;/thead&gt;</b><br><br>
+
+                <b>&lt;tbody&gt;</b><br>
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>Duality<b>&lt;/td&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>2004<b>&lt;/td&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br><br>
+
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>Before I Forget<b>&lt;/td&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>2004<b>&lt;/td&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br>
+                <b>&lt;/tbody&gt;</b><br><br>
+
+                <b>&lt;tfoot&gt;</b><br>
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Nu Metal<b>&lt;/th&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Estados Unidos<b>&lt;/th&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br>
+                <b>&lt;/tfoot&gt;</b><br><br>
+            
+                <b>&lt;/table&gt;</b><br>
+            </code>
+        </div>
+
+        <div>
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Música</th>
+                        <th>Ano de Lançamento</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Duality</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Before I Forget</td>
+                        <td>2004</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Nu Metal</td>
+                        <td>Estados Unidos</td>
+                    </tr>
+                </tfoot>
+                
+            </table>
+        </div>
+
+    </div>
+
+    <div class="grupo">
+        <h2>CAPTION</h2>
+        <ul>
+            <li>Determina um título para a tabela</li>
+        </ul>
+    </div>
+
+    <div class="tabela">
+
+        <div>
+            <code>
+                <b>&lt;table&gt;</b><br><br>
+
+                <b>&lt;caption&gt;</b>Tabela de Músicas<b>&lt;/caption&gt;</b><br><br>
+
+                <b>&lt;thead&gt;</b><br>
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Ano<b>&lt;/th&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Total de Vendas (R$)<b>&lt;/th&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br>
+                <b>&lt;/thead&gt;</b><br><br>
+
+                <b>&lt;tbody&gt;</b><br>
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>Duality<b>&lt;/td&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>2004<b>&lt;/td&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br><br>
+
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>Before I Forget<b>&lt;/td&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;td&gt;</b>2004<b>&lt;/td&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br>
+                <b>&lt;/tbody&gt;</b><br><br>
+
+                <b>&lt;tfoot&gt;</b><br>
+                    &nbsp;<b>&lt;tr&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Nu Metal<b>&lt;/th&gt;</b><br>
+                        &nbsp;&nbsp;<b>&lt;th&gt;</b>Estados Unidos<b>&lt;/th&gt;</b><br>
+                    &nbsp;<b>&lt;/tr&gt;</b><br>
+                <b>&lt;/tfoot&gt;</b><br><br>
+            
+                <b>&lt;/table&gt;</b><br>
+            </code>
+        </div>
+
+        <div>
+            <table>
+                <caption>Tabela de Músicas</caption>
+                
+                <thead>
+                    <tr>
+                        <th>Música</th>
+                        <th>Ano de lançamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Duality</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Before I Forget</td>
+                        <td>2004</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Nu Metal</td>
+                        <td>Estados Unidos</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
